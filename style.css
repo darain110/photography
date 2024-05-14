@@ -1,0 +1,146 @@
+header{
+    background-color: black;
+   padding: 1rem 0rem 1rem 0rem;
+}
+.navbar-brand{
+    font-weight: 500;
+    font-size: 30px;
+   
+}
+.navbar-nav a{
+    color: white;
+    font-size: 20px;
+}
+section{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5rem 6rem 5rem 6rem;
+    border-top: 1px solid gray;
+}
+.photo-text h1{
+    font-weight: bold;
+    font-size: calc(1.575rem + 3.9vw);
+    margin-bottom: 4rem;
+}
+.photo-text p{
+    font-size: calc(1.2rem + 0.7vw);
+    font-style: italic;
+    margin-top: 1rem;
+    font-weight: 400;
+
+}
+.photo-text{
+    display: flex;
+    justify-content: center;   
+}
+.photo-text>div{
+    width: 80%;
+}
+.img-grid{
+    display: flex; 
+}
+.img-grid img{
+    width: 90%;
+    filter: grayscale(1);
+    transition: 600ms;
+}
+.img-grid img:hover{
+    filter: none;
+    transition: 600ms;
+}
+.img-grid h2{
+    padding: 1.5rem 0rem 3rem 0rem;
+    font-family:'Times New Roman', Times, serif;
+}
+.contact {
+    display: flex;
+    justify-content:space-evenly;
+    background-color:rgb(34, 34, 34);
+    color: white;
+    padding: 5rem 3rem 5rem 3rem;
+}
+.contact>div{
+    width: 40%;
+    padding-left: 1rem;
+}
+.contact h1{
+    font-size: calc(1.575rem + 2.7vw);
+    margin-bottom: 2rem;
+    border-right: 1px solid rgb(225, 224, 224);
+}
+.contact p{
+    font-size: calc(1em + 0.7vw);
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+.footer-sub{
+    flex-basis: 90%;
+    display: flex;
+    justify-content: space-around;
+   
+}
+footer h4{
+    color: black;
+}
+footer a{
+    color: rgb(52, 52, 52);
+    text-decoration: none;
+   
+}
+footer{
+    color: rgb(52, 52, 52);
+    font-weight: 500;
+    padding:5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(229, 228, 228);
+}
+@media screen and (max-width:700px){
+    section{
+        padding: 5rem 1.5rem 3rem 1.5rem;
+    }
+    .photo-text h1{
+        margin-bottom: 2rem;
+
+    }
+    .photo-text>div{
+        width: 100%;
+    }
+    .img-grid{
+        flex-direction: column;
+    }
+    .img-grid img{
+        width: 100%;
+    }
+    .img-grid h2{
+        padding: 1rem 0rem 2rem 0rem;
+       
+    }
+    .contact>div{
+        width: 100%;
+    }
+    .contact {
+        flex-direction: column;
+        padding: 1rem 1rem 2rem 1rem;
+    }
+    .contact h1{
+        border-right:none;
+    }
+    .footer-sub{
+        justify-content: space-between;
+    }
+    footer{
+        gap: 2rem;
+        padding:3rem 1rem 3rem 1rem;
+        flex-direction: column;
+    }
+}
+@media  (min-width:700px) and (max-width:900px){
+    section{
+        padding: 5rem 2rem 3rem 2rem;
+    }
+}
